@@ -1,4 +1,4 @@
-# patternlib
+# AC pattern library
 
 ## Build & development
 
