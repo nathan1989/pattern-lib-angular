@@ -9,9 +9,4 @@
  */
 angular.module('patternlibApp')
   .controller('NavigationCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });

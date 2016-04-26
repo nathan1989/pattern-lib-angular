@@ -16,8 +16,4 @@ describe('Controller: NavCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(NavCtrl.awesomeThings.length).toBe(3);
-  });
 });

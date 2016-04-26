@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('patternlibApp', [
     'ngAnimate',
@@ -39,3 +40,7 @@ angular
         redirectTo: '/'
       });
   });
+
+angular.element(document).ready(function() {
+    angular.bootstrap(document, ['patternlibApp']);
+});

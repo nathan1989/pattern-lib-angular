@@ -1,73 +1,50 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-
-$screen-xlg: 1440px;
+// Custom variable overrides
+@import "common/_variables";
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "font-awesome/scss/font-awesome.scss";
 // endbower
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+// Custom styles and overrides
+// Most custom classes begin with the prefix 'ac-*'
 
-body {
-  padding: 0;
-}
+// Common styles
+@import "common/_fonts";
+@import "common/_mixins";
+@import "common/_global";
+@import "common/_utilities";
+@import "common/_buttons";
+@import "common/_header";
+@import "common/_footer";
+@import "common/_search";
 
-.ns-clear {
-  clear: both;
-}
+// Navigation styles
+@import "navigation/_breadcrumbs";
+@import "navigation/_pagination";
+@import "navigation/_pager"; // left/right or prev/next buttons
+@import "navigation/_accordion";
+@import "navigation/_tabs";
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+// Components styles
+@import "components/_forms";
+@import "components/_cards";
+@import "components/_grid";
+@import "components/_list";
+@import "components/_sliders";
+@import "components/_documents";
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-}
+// Panels styles
+@import "panels/_timeline";
+@import "panels/_badges";
+@import "panels/_posters";
+@import "panels/_timeline-status";
+@import "panels/_multimedia";
 
 // Sidebar nav
 .sidebar-nav {
   .active {
     text-decoration: underline;
-  }
-}
-
-// Links
-.ext-link {
-  &:after {
-    content: $fa-var-external-link;
-    font-family: FontAwesome;
-    margin-left: 4px;
   }
 }
 

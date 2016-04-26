@@ -17,13 +17,5 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "patternlibApp",
-  "overrides": {
-    "font-awesome": {
-      "main": [
-        "fonts/*",
-        "scss/font-awesome.scss"
-      ]
-    }
-  }
+  "moduleName": "patternlibApp"
 }

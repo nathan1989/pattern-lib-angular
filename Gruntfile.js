@@ -425,6 +425,11 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/font-awesome/fonts/*',
+          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
@@ -480,14 +485,14 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'wiredep',
-    'concurrent:test',
-    'postcss',
-    'connect:test',
-    'karma'
-  ]);
+  // grunt.registerTask('test', [
+  //   'clean:server',
+  //   'wiredep',
+  //   'concurrent:test',
+  //   'postcss',
+  //   'connect:test',
+  //   'karma'
+  // ]);
 
   grunt.registerTask('build', [
     'clean:dist',
@@ -510,7 +515,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    'test',
+    // 'test',
     'build'
   ]);
 };

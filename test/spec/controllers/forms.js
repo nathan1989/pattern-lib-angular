@@ -16,8 +16,4 @@ describe('Controller: FormsCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(FormsCtrl.awesomeThings.length).toBe(3);
-  });
 });
